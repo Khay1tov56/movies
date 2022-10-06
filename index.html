@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>10-dars</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <ul class="row list align-content-center">
+               
+            </ul>
+        </div>
+    </main>
+
+   
+
+    <template class="js-template">
+        <li class="col-12 col-md-6 col-xl-4 list-unstyled liitem">
+            <div class="card h-100">
+                <img class="image img-fluid" src="" alt="img">
+                <span class="count"></span>
+                <div class="wrap p-3">
+                    <h4 class="title-text"></h4>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="fs-6 star"></span> &nbsp;
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <span class="fs-6 year"></span> &nbsp;
+                    <i class="fa-solid fa-clock"></i>
+                    <span class="fs-6 clock"><span class="soat"></span> hr <span class="minut"></span> min</span> &nbsp;
+                    <br><br>
+                    <p class="fs-5 fw-bold name"></p>
+
+                    <button class="btn btn-secondary js-href" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                        type="button"><i class="fa-solid fa-circle-info fs-5"></i>&nbsp;More info</button>
+                </div>
+            </div>
+        </li>
+
+    </template>
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+         <div class="modal-content">
+            <div class="modal-body">
+                <div class="row w-100">
+                    <div class="col-12 text-center col-xl-6 text-xl-start ">
+                        <div class="wrapper">
+                            <h2 class="title-texta"></h2>
+                            <iframe class="iframe" width="300" height="220" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-12 text-center col-xl-6 text-xl-start">
+                        <div class="wrape p-3">
+                            <h4 class="title-texts"></h4>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="fs-6 stars"></span> &nbsp;
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <span class="fs-6 years"></span> &nbsp;
+                    <i class="fa-solid fa-clock"></i>
+                    <span class="fs-6 clock"><span class="soats"></span> hr <span class="minuts"></span> min</span> &nbsp;
+                    <br><br>
+                            <p class="fs-5 fw-bold names"></p>
+                            <p class="lorem"></p>
+                            <a class="btn btn-link more" href="#" target="_blank">show on IMDB &nbsp;<i class="fa-solid fa-right-from-bracket text-info"></i></a>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="close btn btn-secondary " data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/movies.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+/* .row {
+    width: 100% !important;
+    max-width: 1200px !important;
+} */
+
+
+/* .card {
+    width: 350px;
+
+} */
+
+
+/* @media only screen and (min-width:576px) { */
+
+    .modal-body,
+    .modal-content {
+        min-width: 700px !important;
+        margin: 0 !important;
+    }
+/* } */
+
+
+li {
+    margin-top: 20px !important;
+}
+
+i {
+    cursor: pointer;
+}
