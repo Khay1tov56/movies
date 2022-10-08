@@ -1,11 +1,11 @@
-let elList = document.querySelector(".list")
+let elList = document.querySelector(".list");
 let elTemplate = document.querySelector(".js-template").content;
-let elText = document.querySelector(".title-text")
-let elTexta = document.querySelector(".title-texta")
+let elText = document.querySelector(".title-text");
+let elTexta = document.querySelector(".title-texta");
 let elStar = document.querySelector(".star");
 let elYear = document.querySelector(".year");
 let elClock = document.querySelector(".soat");
-let elMn = document.querySelector(".minut")
+let elMn = document.querySelector(".minut");
 let elFrame = document.querySelector(".iframe");
 let elStars = document.querySelector(".stars");
 let elYears = document.querySelector(".years");
@@ -17,6 +17,7 @@ let elMore = document.querySelector(".more");
 let elClose = document.querySelector(".close");
 
 let fragment = new DocumentFragment();
+
 let movieSplic = movies.splice(0, 100);
 let count = 1;
 
@@ -35,6 +36,7 @@ for (movie of movieSplic) {
         elTemplateClone.querySelector(".minut").textContent += Number(Math.floor(movie.runtime % 60));
 
     fragment.appendChild(elTemplateClone);
+
 }
 
 elList.addEventListener("click", function (evt) {
@@ -45,8 +47,8 @@ elList.addEventListener("click", function (evt) {
 
         let itemFind = movieSplic.find(obj => obj.imdb_id == btnId);
 
-        elTexta.textContent = itemFind.Title
-        elFrame.src = `https://www.youtube-nocookie.com/embed/${itemFind.ytid}`,
+        elTexta.textContent = itemFind.Title,
+            elFrame.src = `https://www.youtube-nocookie.com/embed/${itemFind.ytid}`,
             elStars.textContent = itemFind.imdb_rating,
             elYears.textContent = itemFind.movie_year,
             elSoats.textContent = Number(Math.floor(itemFind.runtime / 60)),
@@ -58,11 +60,10 @@ elList.addEventListener("click", function (evt) {
         elClose.addEventListener("click", function () {
 
             elFrame.src = "";
+
         });
 
     };
-
-
 
 });
 
